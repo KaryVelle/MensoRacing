@@ -17,13 +17,13 @@ public class Pendulo : MonoBehaviour
     [SerializeField] private float zForce;
    
     
-    [SerializeField] private Collider colCilinder;
+    [SerializeField] private Collider colCylinder;
     [SerializeField] private CharacterController player;
 
     void Start()
     {
         startPos = transform.rotation;
-        colCilinder.GetComponent<Collider>();
+        colCylinder.GetComponent<Collider>();
         player.GetComponent<CharacterController>();
     }
 
