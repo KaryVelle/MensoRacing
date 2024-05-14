@@ -20,6 +20,8 @@ public class Pendulo : MonoBehaviour
     [SerializeField] private Collider colCylinder;
     [SerializeField] private CharacterController player;
 
+    [SerializeField] private AudioSource polloScream;
+
     void Start()
     {
         startPos = transform.rotation;
@@ -39,6 +41,7 @@ public class Pendulo : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            polloScream.Play();
             AddForce();
         }
     }
