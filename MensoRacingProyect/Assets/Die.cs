@@ -13,7 +13,7 @@ public class Die : MonoBehaviour
    {
        if (other.CompareTag("Player"))
        {
-           player.Move(checker.currentPoint.position);
+           player.Move(checker.currentPointLoad.position);
        }
    }
 }
