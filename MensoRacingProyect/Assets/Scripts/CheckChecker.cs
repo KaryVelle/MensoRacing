@@ -7,10 +7,12 @@ public class CheckChecker : CheckpointCheckerClass
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Checkpoint"))
+        Debug.Log("entracualqueir trigger");
+        if (other.transform.tag == "Checkpoint")
         {
-            currentPoint = other.GetComponent<Transform>();
-            checkpoints.Add(currentPoint);
+            Debug.Log("entro");
+            currentPointLoad = other.GetComponent<Transform>();
+            checkpoints.Add(currentPointLoad);
         }
     }
 }
