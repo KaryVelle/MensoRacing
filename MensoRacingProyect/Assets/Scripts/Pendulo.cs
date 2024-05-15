@@ -50,6 +50,7 @@ public class Pendulo : MonoBehaviour
     {
         player.Move(new Vector3(rot.x + xForce, rot.y +yForce, 0 + zForce));
         Debug.Log("Force");
-    }
+       
+    }   
 }
 

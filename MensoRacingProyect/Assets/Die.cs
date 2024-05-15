@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Die : MonoBehaviour
 {
-   [SerializeField] private Collider col;
+    [SerializeField] private CheckChecker checker;
+   [SerializeField] private CharacterController player;
 
    public void OnTriggerEnter(Collider other)
    {
        if (other.CompareTag("Player"))
        {
-           SceneManager.LoadScene("GameScene");
+           player.Move(checker.currentPoint.position);
        }
    }
 }

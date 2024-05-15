@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Die
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
