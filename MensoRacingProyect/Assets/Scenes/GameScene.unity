@@ -35110,12 +35110,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 348113173}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1858424563 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 4681656673210916863, guid: 572af3617a37ddc44a45a6559bf402f6,
-    type: 3}
-  m_PrefabInstance: {fileID: 348113173}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1858424566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35128,9 +35122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd56fd74dad29a4d820051b0f35de74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col: {fileID: 1858424563}
   checker: {fileID: 570894614}
-  player: {fileID: 570894610}
+  player: {fileID: 835406025}
 --- !u!1 &1860351776
 GameObject:
   m_ObjectHideFlags: 0
