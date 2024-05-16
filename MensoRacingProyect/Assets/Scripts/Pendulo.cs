@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pendulo : MonoBehaviour
 {
@@ -24,6 +26,11 @@ public class Pendulo : MonoBehaviour
     
     [SerializeField] private CheckChecker checker;
     [SerializeField] private GameObject playerToMove;
+
+    [SerializeField] private CinemachineVirtualCamera cinemachineVc;
+    [SerializeField] private GameObject playerToFollow;
+
+    [SerializeField] private Image animImg;
 
     void Start()
     {
@@ -52,18 +59,41 @@ public class Pendulo : MonoBehaviour
     private void AddForce()
     {
         player.Move(new Vector3(rot.x + xForce, rot.y +yForce, 0 + zForce));
-        
+        cinemachineVc.Follow = null;
         StartCoroutine(Respawn());
     }
 
     private IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(3);
+        float fillSpeed = 2.0f / 1.0f;
+
+        yield return new WaitForSeconds(1);
+    
+        // Llena la pantalla
+        while (animImg.fillAmount < 1)
+        {
+            animImg.fillAmount += fillSpeed * Time.deltaTime; 
+            yield return null; 
+        }
+    
+        yield return new WaitForSeconds(0.3f);
+    
+        // Mueve al jugador instantáneamente al punto de destino
         player.enabled = false;
-        player.Move(Vector3.zero);
         playerToMove.transform.position = checker.currentPointLoad.position;
+        cinemachineVc.Follow = playerToFollow.transform; 
+
+        // Restablece la pantalla gradualmente
+        while (animImg.fillAmount > 0)
+        {
+            animImg.fillAmount -= fillSpeed * Time.deltaTime; 
+            yield return null; 
+        }
+
+        // Habilita el control del jugador y restablece la cámara para seguir al jugador
         player.enabled = true;
-       
+        
     }
+
 }
 
