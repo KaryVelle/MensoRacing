@@ -2075,6 +2075,8 @@ MonoBehaviour:
   colCylinder: {fileID: 90594709}
   player: {fileID: 835406025}
   polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &90594709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8112,6 +8114,8 @@ MonoBehaviour:
   colCylinder: {fileID: 483881639}
   player: {fileID: 835406025}
   polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &483881639
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11452,7 +11456,7 @@ PrefabInstance:
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.020688534
+      value: 0.020688772
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
@@ -11467,17 +11471,17 @@ PrefabInstance:
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.008912801
+      value: 0.0089128185
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.015530108
+      value: 0.015530107
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00013843893
+      value: -0.00013843921
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
@@ -14568,6 +14572,8 @@ MonoBehaviour:
   colCylinder: {fileID: 820912847}
   player: {fileID: 835406025}
   polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &820912847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17527,8 +17533,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991071320}
-  m_LocalRotation: {x: 0.08398061, y: 0.19335784, z: 0.013145432, w: 0.9774391}
-  m_LocalPosition: {x: -0.34656322, y: 0.10773873, z: -5.986053}
+  m_LocalRotation: {x: 0.08398063, y: 0.19335784, z: 0.013145429, w: 0.9774391}
+  m_LocalPosition: {x: -0.34656322, y: 0.10773897, z: -5.986053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19711,6 +19717,8 @@ MonoBehaviour:
   colCylinder: {fileID: 1090809363}
   player: {fileID: 835406025}
   polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &1090809363
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20310,7 +20318,9 @@ MonoBehaviour:
   zForce: 0
   colCylinder: {fileID: 1110694177}
   player: {fileID: 835406025}
-  polloScream: {fileID: 0}
+  polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &1110694177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21436,7 +21446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 63
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -21463,19 +21473,19 @@ MonoBehaviour:
     roll: 0
   - position: {x: 80.928665, y: -2.7064068, z: 46.785282}
     roll: 0
-  - position: {x: 87.9038, y: -3.635499, z: 44.022827}
+  - position: {x: 87.9038, y: -2.9906301, z: 44.12266}
     roll: 0
-  - position: {x: 94.959564, y: -5.151246, z: 41.386963}
+  - position: {x: 94.959564, y: -4.037151, z: 41.559437}
     roll: 0
-  - position: {x: 113.45552, y: -6.6380854, z: 34.49082}
+  - position: {x: 113.45552, y: -4.8731403, z: 34.76405}
     roll: 0
   - position: {x: 131.95148, y: -0.19946073, z: 28.82161}
     roll: 0
   - position: {x: 143.92494, y: 0.12825698, z: 25.536423}
     roll: 0
-  - position: {x: 150.97697, y: -5.5663586, z: 39.162415}
+  - position: {x: 150.97697, y: -3.7835479, z: 39.438408}
     roll: 0
-  - position: {x: 155.13658, y: -9.603218, z: 50.654266}
+  - position: {x: 155.13658, y: -8.2964325, z: 50.85657}
     roll: 0
   - position: {x: 159.50957, y: -8.958593, z: 62.78982}
     roll: 0
@@ -21483,27 +21493,27 @@ MonoBehaviour:
     roll: 0
   - position: {x: 167.81984, y: -7.6943626, z: 87.22252}
     roll: 0
-  - position: {x: 172.5229, y: -13.294537, z: 96.865974}
+  - position: {x: 172.5229, y: -11.214509, z: 97.187996}
     roll: 0
-  - position: {x: 177.43843, y: -15.833164, z: 110.57863}
+  - position: {x: 177.43843, y: -11.983843, z: 111.17454}
     roll: 0
-  - position: {x: 182.35396, y: -17.650522, z: 124.40295}
+  - position: {x: 179.03781, y: -16.63032, z: 125.82018}
     roll: 0
-  - position: {x: 184.58853, y: -18.326145, z: 130.85208}
-    roll: -56.46
+  - position: {x: 184.84924, y: -18.43243, z: 131.53862}
+    roll: 0
   - position: {x: 195.37833, y: -17.485178, z: 127.50457}
     roll: 0
-  - position: {x: 208.34193, y: -16.280632, z: 121.80841}
-    roll: -50
-  - position: {x: 207.25668, y: -10.409516, z: 110.85939}
+  - position: {x: 208.34193, y: -9.215426, z: 122.90217}
     roll: 0
-  - position: {x: 208.34288, y: -1.5012566, z: 99.55596}
+  - position: {x: 207.25668, y: 2.979756, z: 112.93216}
     roll: 0
-  - position: {x: 210.01279, y: 3.3252783, z: 87.39899}
+  - position: {x: 208.89447, y: 11.243245, z: 103.01627}
     roll: 0
-  - position: {x: 211.6827, y: 11.463893, z: 75.75475}
+  - position: {x: 210.71828, y: 18.648006, z: 91.67335}
     roll: 0
-  - position: {x: 211.85805, y: 15.163992, z: 59.393417}
+  - position: {x: 209.5653, y: 27.450356, z: 72.52019}
+    roll: 0
+  - position: {x: 208.2821, y: 27.924294, z: 51.726547}
     roll: 0
 --- !u!4 &1170229435
 Transform:
@@ -35344,6 +35354,7 @@ MonoBehaviour:
   checker: {fileID: 835406027}
   cc: {fileID: 835406025}
   player: {fileID: 835406019}
+  playerToMove: {fileID: 570894610}
   moveSpeed: 50
 --- !u!1 &1860351776
 GameObject:
@@ -38261,6 +38272,8 @@ MonoBehaviour:
   colCylinder: {fileID: 1960269753}
   player: {fileID: 835406025}
   polloScream: {fileID: 1231154611}
+  checker: {fileID: 835406027}
+  playerToMove: {fileID: 835406019}
 --- !u!64 &1960269753
 MeshCollider:
   m_ObjectHideFlags: 0
