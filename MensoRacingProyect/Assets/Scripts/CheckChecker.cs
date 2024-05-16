@@ -9,8 +9,8 @@ public class CheckChecker : CheckpointCheckerClass
     {
         if (other.CompareTag("Checkpoint"))
         {
-            currentPoint = other.GetComponent<Transform>();
-            checkpoints.Add(currentPoint);
+            currentPointLoad = other.GetComponent<Transform>();
+            checkpoints.Add(currentPointLoad);
         }
     }
 }

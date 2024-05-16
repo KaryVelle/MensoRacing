@@ -21,6 +21,9 @@ public class Pendulo : MonoBehaviour
     [SerializeField] private CharacterController player;
 
     [SerializeField] private AudioSource polloScream;
+    
+    [SerializeField] private CheckChecker checker;
+    [SerializeField] private GameObject playerToMove;
 
     void Start()
     {
@@ -49,6 +52,18 @@ public class Pendulo : MonoBehaviour
     private void AddForce()
     {
         player.Move(new Vector3(rot.x + xForce, rot.y +yForce, 0 + zForce));
+        
+        StartCoroutine(Respawn());
+    }
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(3);
+        player.enabled = false;
+        player.Move(Vector3.zero);
+        playerToMove.transform.position = checker.currentPointLoad.position;
+        player.enabled = true;
+       
     }
 }
 
