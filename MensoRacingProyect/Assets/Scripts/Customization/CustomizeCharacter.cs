@@ -6,7 +6,7 @@ public class CustomizeCharacter : MonoBehaviour
 {
     [SerializeField] private List<Material> materials;
     [SerializeField] private List<Material> bodyMaterials;
-    [SerializeField] private Renderer renderer; 
+    [SerializeField] private  new Renderer renderer; 
     [SerializeField] private List<GameObject> hats; 
     [SerializeField] private List<GameObject> eyes; 
 
