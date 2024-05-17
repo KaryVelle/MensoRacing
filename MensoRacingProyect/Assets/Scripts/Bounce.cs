@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bounce : TrampolineClass
 {
-    void Start()
+    new void Start()
     {
         colBounce.GetComponent<Collider>();
         player.GetComponent<CharacterController>();
